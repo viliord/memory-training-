@@ -1,0 +1,22 @@
+.switch_contents {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.1rem;
+  position: absolute;
+  top: 65px;
+  margin: 0;
+  width: 100%;
+}
+input[name="layout"] {
+  display: none;
+}
+input[name="layout"]:checked + label {
+  border-bottom: 2px solid #3498db;
+  cursor: default;
+}
+
+@media (max-width: 512px) {
+  .switch_contents {
+    top: 40px;
+  }
+}
